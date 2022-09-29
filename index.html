@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" 
+  />
+
+  <title>Time Now</title>
+</head>
+<body>
+  <header class="header grid md:grid-cols-2 ">
+ <section class="text md:pl-24 px-4 py-8 w-full">
+    <div class="sm:flex items-center space-x-6 pb-16">
+        <a href="#" class="px-4">
+            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.009 12.3886C16.238 14.7966 13.61 17.1716 10.65 16.7846C9.849 17.9036 8.955 19.4666 7.962 21.2806L5.666 22.0006C7.609 18.2106 10.203 14.0196 12.986 10.8346C11.781 11.6196 9.801 13.3076 8.078 15.0876C6.524 11.8416 8.163 8.83461 10.536 6.53961C10.469 7.62061 10.949 8.60761 11.308 9.11461C11.246 8.21061 11.352 6.59461 12.012 5.19461C13.335 4.07861 14.504 3.27461 15.841 2.57261C15.624 3.36361 15.808 4.31161 16.063 4.90361C16.179 4.08361 16.666 2.53561 17.23 1.89361C18.897 0.818614 21.365 -0.0423855 24 0.00161449C23.709 1.62461 22.857 4.25961 21.706 5.89461C20.777 6.49161 19.549 6.84061 18.569 7.00961C19.38 7.23761 20.288 7.30262 21.078 7.24462C20.503 8.45162 19.921 9.55561 19.039 10.9106C17.823 11.5896 16.269 11.8886 15.207 11.9456C15.95 12.3346 17.304 12.5626 18.009 12.3886ZM4 21.0006H0V22.0006H4V21.0006Z"
+                    fill="#E8704A" />
+            </svg>
+        </a>
+        <a href="index.html" class="text-gray-500 sm:hidden md:block">Features</a>
+        <a href="pricing.html" class="text-gray-500 sm:hidden md:block">Pricing</a>
+        <!-- Hamburger Menu -->
+    <button
+    id="menu-btn"
+    class="block hamburger md:hidden focus:outline-none"
+    type="button"
+  >
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="absolute hidden p-6 rounded-lg bg-indigo-600 left-6 right-6 top-20 z-100">
+    <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+      <a href="index.html" class="w-full text-center">Features</a>
+      <a href="pricing.html" class="w-full text-center">Pricing</a>
+      <button class="p-4 bg-indigo-900 text-white font-semibold rounded">Start Scheduling</button>
+    </div>
+  </div>
+    </div>
+    
+    <div class="text py-4 sm:py-8 md:py-16">
+        <h1 class="md:text-6xl text-4xl font-bold text-indigo-900 leading-tight">
+            Post when your audience is most active
+        </h1>
+        <p class="text-gray-500 py-2">
+           With TimeNow, automatically schedule your posts on Twitter, LinkedIn, and Instagram to post when your followers are most active.
+        </p>
+        <div class="md:flex md:flex-col lg:flex-row space-x-4 my-4">
+            <button class="p-4 bg-indigo-900 text-white font-semibold rounded">Start Scheduling</button>
+            <button class="p-4 text-gray-700 font-bold rounded">View Demo &rarr;</button>
+        </div>
+        <div class="flex space-x-4">
+            <span>
+                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9 0C5.629 2.866 3.516 3 0 3V14.535C0 19.138 3.203 20.339 9 24C14.797 20.339 18 19.138 18 14.535V3C14.484 3 12.371 2.866 9 0ZM8.452 15L5 11.638L6.237 10.399L8.452 12.522L12.834 8.047L14.072 9.285L8.452 15Z"
+                        fill="#049372" />
+                </svg>
+            </span>
+            <p class="text-gray-500">TimeNow does not sell your data. <span
+                    class="text-gray-700 font-bold border-b-2 border-gray-700">Learn more</span></p>
+        </div>
+    </div>
+</section>
+<section class="image py-4 md:px-12 px-2 w-full h-full bg-teal-400">
+    <div class="md:block sm:hidden pr-16 pb-16 text-right">
+        <button class="p-4 bg-indigo-900 text-white font-semibold rounded">Start Scheduling</button>
+    </div>
+    <div class="img">
+        <img src="Images/Mockup.png" class="w-full" alt="">
+    </div>
+</section>
+</header>
+
+
+<!-- hero section -->
+<main class="md:flex justify-between py-8">
+    <section class="text md:px-24 px-4 py-8 justify-between items-center md:block w-full">
+        <h2 class="text-2xl md:text-2xl text-indigo-900 font-bold w-full sm:text-4xl">TimeNow is used by the most influential people.</h2>
+        <div class="grid md:grid-cols-8 md:gap-2 grid-cols-6 gap-2 sm:grid-cols-5 sm:w-3/4 md:w-full sm:gap-2 py-8">
+            <img src="Images/UA1.png" alt="">
+            <img src="Images/UA2.png" alt="">
+            <img src="Images/UA3.png" alt="">
+            <img src="Images/UA4.png" alt="">
+            <img src="Images/UA5.png" alt="">
+            <img src="Images/UA6.png" alt="">
+            <img src="Images/UA7.png" alt="">
+            <img src="Images/UA8.png" alt="">
+        </div>
+    </section>
+    <section class="text md:px-24 px-4 py-8 w-full">
+        <p class="text-gray-500 pb-2">
+           The most important people on Twitter, Facebook, and Instagram are using TweetNow to schedule posts when their followers are more active.
+        </p>
+        <p class="text-gray-500 py-2">
+            They generally receive 23% more engagement than people who do not.
+        </p>
+    </section>
+</main>
+
+    <!-- Article Sections -->
+    <section class="lg:flex justify-between bg-teal-200">
+       <div class="md:px-24 px-4 py-8 w-full">
+         <h3 class="font-semibold text-indigo-700 py-2">Unified Dashboard</h3>
+         <h1 class="text-3xl font-bold text-teal-800">Customizable dashboard for all platforms</h1>
+         <p class="text-gray-500 py-6">
+            Use Twitter and Instagram but not LinkedIn? You can customize your dashboard to your liking. You can even schedule the same post to individual platforms instead of all platforms.
+         </p>
+         <div class="my-2">
+            <button class="p-4 bg-indigo-900 text-white font-semibold rounded">Start Scheduling</button>
+         </div>
+       </div>
+
+       <!-- Second Section -->
+       <div class="md:px-24 px-4 py-8 w-full">
+        <h3 class="font-semibold text-indigo-700 py-2">Enhanced Analytics</h3>
+        <h1 class="text-3xl font-bold text-teal-800">Real time data that tells you everything.</h1>
+        <p class="text-gray-500 py-6">
+           Get detailed reports of what is working and what isn't. Engagement rates, impressions, views, and much more data is availaible to you through our in-depth dashboard tool. 
+        </p>
+        <div class="my-2">
+            <button class="p-4 text-gray-700 font-bold rounded">View Live Demo &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="lg:flex justify-between">
+     <div class="md:px-24 px-4 py-8 w-full">
+        <!-- Logo -->
+        <div class="logo py-16">
+         <img src="images/Logo.svg" alt="" class="mr-36">
+        </div>
+        <!-- Menus Container -->
+          <div class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+            <!-- Menu 1 -->
+            <div class="flex flex-col items-center w-full md:items-start">
+                <div class="mb-5 font-bold capitalize">Products</div>
+                <div class="flex flex-col items-center space-y-3 md:items-start">
+                   <a href="#" class="capitalize text-gray-500">Homepage</a>
+                   <a href="#" class="capitalize text-gray-500">Pricing</a>
+                   <a href="#" class="capitalize text-gray-500">Features</a>
+                </div>
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="flex flex-col items-center w-full md:items-start">
+                <div class="mb-5 font-bold capitalize">Help</div>
+                <div class="flex flex-col items-center space-y-3 md:items-start">
+                   <a href="#" class="capitalize text-gray-500">Live Chat</a>
+                   <a href="#" class="capitalize text-gray-500">Send Email</a>
+                   <a href="#" class="capitalize text-gray-500">fAQ</a>
+                </div>
+            </div>
+
+             <!-- Menu 3 -->
+             <div class="flex flex-col items-center w-full md:items-start">
+                <div class="mb-5 font-bold capitalize">Company</div>
+                <div class="flex flex-col items-center space-y-3 md:items-start">
+                   <a href="#" class="capitalize text-gray-500">about</a>
+                   <a href="#" class="capitalize text-gray-500">customers</a>
+                   <a href="#" class="capitalize text-gray-500">blog</a>
+                </div>
+            </div>
+          </div>
+     </div>
+     <section class="input w-full md:px-24 py-8 px-4 lg:mt-36">
+        <h2 class="font-bold py-2">Try TweetNow</h2>
+
+    <div class="rounded flex justify-between border border-gray-400 p-1">
+        <input type="text" class="outline-none" placeholder="Email Address">
+        <button class="p-4 bg-indigo-900 text-white font-semibold rounded">Start Scheduling</button>
+    </div>
+</section>
+    </footer>
+</body>
+</html>
